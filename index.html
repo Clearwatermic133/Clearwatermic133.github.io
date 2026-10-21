@@ -49,6 +49,12 @@ h2{color:var(--gold);font-size:1.7rem;letter-spacing:.05em;margin-bottom:1.2rem;
 .person.michael h3{color:var(--gold)}
 .person.vivid h3{color:var(--teal)}
 .person img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid var(--line);margin-bottom:1rem}
+.svc-form{max-width:640px;margin:1.4rem auto 0;text-align:left}
+.svc-form label{display:block;color:var(--muted);font-size:.9rem;margin:.9rem 0 .3rem}
+.svc-form input,.svc-form select,.svc-form textarea{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:6px;color:inherit;padding:.7rem;font:inherit;box-sizing:border-box}
+.svc-form textarea{min-height:130px}
+.svc-form .btn{margin-top:1.2rem;border:0;cursor:pointer;font:inherit}
+#thanks{display:none;background:var(--bg2);border:1px solid var(--teal);border-radius:8px;padding:1rem 1.2rem;margin:1.4rem auto 0;max-width:640px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:1.2rem}
 .card{background:var(--bg2);border:1px solid var(--line);border-radius:6px;padding:1.2rem}
 .card h3{color:var(--gold);font-size:1.05rem;margin-bottom:.4rem}
@@ -80,7 +86,7 @@ footer a{color:var(--gold);margin:0 .6rem;text-decoration:none}
 <h1>CLEARWATERMIC PRODUCTIONS <em>×</em> VIVIDABYSS</h1>
 <p class="tag">Two producers. One partnership. Country songs from the surface — beats from the deep. Royalty-free tools and honest guides for songwriters with day jobs.</p>
 <a class="btn" href="https://guidingheart.gumroad.com/l/aazdup">Get the Free Starter Pack</a>
-<a class="btn ghost" href="#producers">Meet the Producers</a>
+<a class="btn ghost" href="#producers">Meet the Producers</a> <a class="btn ghost" href="#services">Book a Service</a>
 </div>
 
 <section id="producers">
@@ -130,6 +136,50 @@ footer a{color:var(--gold);margin:0 .6rem;text-decoration:none}
 <p style="margin-top:1.2rem;color:var(--muted)">Full store: <a href="https://guidingheart.gumroad.com/">guidingheart.gumroad.com</a></p>
 </section>
 
+
+<section id="services">
+<h2>Services — Work With Us</h2>
+<p>Everything below is done by the same two producers behind this site. No outsourcing, no assembly line. Tell us what you are making, and we will write back personally with a price and a timeline before any money changes hands.</p>
+<div class="cards">
+<div class="card"><h3>Mixing</h3><p>Send your raw tracks and get back a balanced, release-ready mix — vocals up front, low end under control, everything in its place.</p></div>
+<div class="card"><h3>Mastering</h3><p>The final polish. Loudness, tone, and clarity set for streaming, so your song holds up next to anything else in the playlist.</p></div>
+<div class="card"><h3>Full Audio Production</h3><p>Have a voice memo or a guitar demo? We build the whole record around it — arrangement, instruments, and a finished mix.</p></div>
+<div class="card"><h3>Stem Separation</h3><p>Your finished song split into clean stems — vocals, drums, bass, and the rest — for remixes, live backing tracks, or sync pitches.</p></div>
+<div class="card"><h3>Custom Sample Packs</h3><p>One-of-one sounds built for your project by Vividabyss, found-sound or traditional, made to order and yours alone.</p></div>
+<div class="card"><h3>Custom Lyrics</h3><p>Lyrics written to your story, your melody, or just your idea — from the songwriter behind 22 released singles.</p></div>
+<div class="card"><h3>Custom Full Songs</h3><p>A complete song, written and produced for you from a blank page. Full rights buyout available on request — the song becomes entirely yours.</p></div>
+</div>
+<div id="thanks"><strong>Request received.</strong> Thank you — we read every request ourselves and will reply to your email soon.</div>
+<form class="svc-form" action="https://formsubmit.co/ClearwatermicProductions@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New service request from the website">
+<input type="hidden" name="_cc" value="Vividabyss1@gmail.com">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://clearwatermic133.github.io/?sent=1#services">
+<input type="hidden" name="_autoresponse" value="Thanks for reaching out to Clearwatermic Productions x Vividabyss. We received your service request and will reply personally with a price and timeline. — Michael & Vividabyss">
+<label for="f-name">Your name</label>
+<input id="f-name" type="text" name="name" required>
+<label for="f-email">Your email</label>
+<input id="f-email" type="email" name="email" required>
+<label for="f-service">What do you need?</label>
+<select id="f-service" name="service" required>
+<option>Mixing</option>
+<option>Mastering</option>
+<option>Full Audio Production</option>
+<option>Stem Separation</option>
+<option>Custom Sample Packs</option>
+<option>Custom Lyrics</option>
+<option>Custom Full Songs</option>
+<option>Something else</option>
+</select>
+<label for="f-details">Tell us about your project</label>
+<textarea id="f-details" name="project details" required placeholder="What you have, what you need, and any deadline we should know about."></textarea>
+<button class="btn" type="submit">Send Request</button>
+</form>
+<p style="margin-top:1.6rem;color:var(--muted)">Prefer to write us directly? Contact us:<br>
+Clearwatermic Productions — <a href="mailto:ClearwatermicProductions@gmail.com">ClearwatermicProductions@gmail.com</a><br>
+Vividabyss — <a href="mailto:Vividabyss1@gmail.com">Vividabyss1@gmail.com</a></p>
+</section>
+
 <section id="book">
 <h2>Beats Without Drums — by Vividabyss</h2>
 <p>Vividabyss's field manual for building full beat packs with <strong>no drums at all</strong> — engines, power tools, nature, and vocals — and mixing them so they sit in a track like a real instrumental. Coming soon to Kindle.</p>
@@ -148,5 +198,6 @@ footer a{color:var(--gold);margin:0 .6rem;text-decoration:none}
 <a href="https://guidingheart.gumroad.com/">Gumroad Store</a>
 </p>
 </footer>
+<script>if(new URLSearchParams(location.search).get('sent')==='1'){var t=document.getElementById('thanks');if(t){t.style.display='block';t.scrollIntoView({behavior:'smooth',block:'center'});}}</script>
 </body>
 </html>
